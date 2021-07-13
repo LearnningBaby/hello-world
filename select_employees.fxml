@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="show.admin.SelectEmployees">
+    <children>
+        <TableView layoutX="8.0" prefHeight="400.0" prefWidth="565.0" AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="ID" prefWidth="75.0" text="ID"/>
+                <TableColumn fx:id="password" prefWidth="102.0" text="password"/>
+                <TableColumn fx:id="name" prefWidth="120.0" text="name"/>
+                <TableColumn fx:id="sex" minWidth="3.0" prefWidth="64.0" text="sex"/>
+                <TableColumn fx:id="age" minWidth="5.0" prefWidth="66.0" text="age"/>
+                <TableColumn fx:id="entry_date" prefWidth="137.0" text="entry_date"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

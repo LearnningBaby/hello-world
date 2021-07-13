@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="admin" fx:id="admin" prefHeight="532.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="show.ShowLogin">
+    <children>
+        <Button layoutX="340.0" layoutY="346.0" mnemonicParsing="false" onAction="#login" prefHeight="23.0"
+                prefWidth="67.0" text="登录" textFill="#562abc"/>
+        <PasswordField fx:id="password" layoutX="246.0" layoutY="266.0" onDragEntered="#login" promptText="密码"/>
+        <TextField fx:id="username" layoutX="246.0" layoutY="204.0" onDragEntered="#login" promptText="用户名"/>
+        <Label layoutX="149.0" layoutY="208.0" text="请输入用户名 :" textFill="#31991a"/>
+        <Label layoutX="155.0" layoutY="270.0" text="请输入密码 :" textFill="#20e12d"/>
+        <Button layoutX="234.0" layoutY="346.0" mnemonicParsing="false" onAction="#clear" prefHeight="23.0"
+                prefWidth="67.0" text="清空" textFill="#bf3292"/>
+        <Label layoutX="202.0" layoutY="129.0" prefHeight="67.0" prefWidth="249.0" text="              登录界面"
+               textFill="#2d9ddd">
+            <font>
+                <Font size="19.0"/>
+            </font>
+        </Label>
+
+        <RadioButton layoutX="218.0" layoutY="313.0" mnemonicParsing="false" text="administrator">
+            <toggleGroup>
+                <ToggleGroup fx:id="post"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="357.0" layoutY="313.0" mnemonicParsing="false" selected="true" text="employees"
+                     toggleGroup="$post"/>
+        <Label layoutX="102.0" layoutY="314.0" text="请选择登录类型" textFill="#641cff"/>
+
+
+    </children>
+</AnchorPane>
